@@ -1,0 +1,12 @@
+<html>
+<head>
+{% set root = '/starter' %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include 'includes.html' %}
+</head>
+<body class="bs-docs-home">
+{% include 'navbar.html' %}
+{% set inc = body ~ '.html' %}
+{% include(inc) %}
+</body>
+</html>	
