@@ -4,6 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $app = new Silex\Application();
 $app['debug'] = true;
+$app['root'] = '/starter';
 
 $app['MongoClient'] = $app->share(function($app) {
 	return new \MongoClient();

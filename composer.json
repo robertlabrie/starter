@@ -5,7 +5,8 @@
         "robertlabrie/robertioc": "dev-master",
         "robertlabrie/robertserializer": "dev-master",
         "symfony/validator": "^3.0@dev",
-        "guzzlehttp/guzzle": "^6.1@dev"
+        "guzzlehttp/guzzle": "^6.1@dev",
+        "ramsey/uuid": "^3.1"
     },
     "minimum-stability":"dev",
     "prefer-stable":true,
