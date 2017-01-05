@@ -24,7 +24,7 @@ $app['GuzzleHttp\Client'] = $app->share(function($app) {
 
 //twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
+    'twig.path' => __DIR__.'/templates',
 ));
 
 //service controller
@@ -41,7 +41,7 @@ $app->post('/api/{team}/{key}',"controller.api:post");
 */
 
 $app->get('/',function() use ($app) {
-	return $app['twig']->render('index.html',array('body'=>'main'));	
+	return $app['twig']->render('index.html',array('body'=>'main'));
 });
 
 return $app;

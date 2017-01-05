@@ -2,9 +2,8 @@
     Options -MultiViews
 
     RewriteEngine On
-    RewriteBase /starter
-    FallbackResource /starter/index.php
+    # RewriteBase /
+    FallbackResource index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [QSA,L]
 </IfModule>
-
